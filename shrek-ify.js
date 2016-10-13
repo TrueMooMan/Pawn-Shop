@@ -1,4 +1,5 @@
-// GitHub.com/AppIns/Doge-ify
+// Created by user Appins
+// Edited by TrueMooMan
 
 function random(n){
   var x = Math.random();
