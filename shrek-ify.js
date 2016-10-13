@@ -1,6 +1,3 @@
-// Code to turn every image on the page to doge
-// Wow, so code, much write, very cool
-
 // GitHub.com/AppIns/Doge-ify
 
 function random(n){
