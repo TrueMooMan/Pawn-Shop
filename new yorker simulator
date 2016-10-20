@@ -1,0 +1,33 @@
+// Created by user Appins
+// Edited by TrueMooMan
+
+function random(n){
+  var x = Math.random();
+  x = Math.round(x * n);
+  return x;
+}
+
+// Images, you could change this to be a totally different program even
+var imgsrc = ["http://pix.iemoji.com/images/emoji/apple/ios-9/256/negative-squared-latin-capital-letter-b.png",
+"https://i.ytimg.com/vi/20CTyJAK_3I/hqdefault.jpg",
+"https://i.ytimg.com/vi/dVp7HoeB7xQ/hqdefault.jpg",
+"https://i.ytimg.com/vi/xLh-ErxW3kc/hqdefault.jpg",
+"https://i.reddituploads.com/65c7e7303cfb435e88109ea68f311996?fit=max&h=1536&w=1536&s=2d661731be0e74648c8b9d7b57f7971f",
+" http://creambmp.com/wp-content/uploads/2016/08/new-york-man-timbs.jpg",
+"http://i2.kym-cdn.com/photos/images/facebook/001/172/149/af5.jpg"
+"https://img.ifcdn.com/images/90ec9fc33a763a660de76a5cb5d29708db27e66de10e0696715fc2c180efcd8c_1.jpg"
+             ];
+
+// Amount of images
+var amt = document.getElementsByTagName("IMG").length;
+if(i == 0){
+  // No images?
+  alert("There are no images on this page");
+}else{
+  for (var i = 0; i < amt; i++){
+    // Get a random number and an image and use an image from imgsrc
+    var cIMG = document.getElementsByTagName("IMG")[i];
+    var rand = random(imgsrc.length - 1);
+    cIMG.src = imgsrc[rand];
+  }
+}
