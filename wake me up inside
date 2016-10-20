@@ -1,0 +1,26 @@
+// Created by user Appins
+// Edited by TrueMooMan
+
+function random(n){
+  var x = Math.random();
+  x = Math.round(x * n);
+  return x;
+}
+
+// Images, you could change this to be a totally different program even
+var imgsrc = ["https://i.ytimg.com/vi/xVZnwDYDYls/maxresdefault.jpg"
+             ];
+
+// Amount of images
+var amt = document.getElementsByTagName("IMG").length;
+if(i == 0){
+  // No images?
+  alert("There are no images on this page");
+}else{
+  for (var i = 0; i < amt; i++){
+    // Get a random number and an image and use an image from imgsrc
+    var cIMG = document.getElementsByTagName("IMG")[i];
+    var rand = random(imgsrc.length - 1);
+    cIMG.src = imgsrc[rand];
+  }
+}
