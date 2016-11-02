@@ -1,0 +1,28 @@
+// Created by user Appins
+// Edited by TrueMooMan
+
+function random(n){
+  var x = Math.random();
+  x = Math.round(x * n);
+  return x;
+}
+
+// Images, you could change this to be a totally different program even
+var imgsrc = ["http://www.astrogle.com/images/2014/09/number-211.png", 
+"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAEACAMAAAA0tEJxAAAAflBMVEX///8AAABFRUXd3d38/Pzt7e3q6urz8/P19fXV1dXS0tLw8PD5+fmhoaHZ2dkjIyM6OjqPj49iYmK+vr5SUlJYWFhNTU1TU1N6enqZmZm0tLStra0ZGRl0dHSCgoKmpqZra2syMjIpKSkRERENDQ0YGBjIyMiRkZE1NTVBQUHwWo50AAAFj0lEQVR4nO2diVoiMRCEGUTkBgXl8AC8ff8XXGBRdFcmVZBOSr/+H2BIMTm6K51MpeI4juM4juM4juM4juM4juM4juM4jvMjORleTxdX/WLH4+v4rjtrneVuGUhrvrgpSnh7mdVzt7GcXrdaJmDHZFjL3dY9tM4xBVtGMz0h7ekjpWHDbTN3s7/Qu+AlbFgOczf9gxY4GL7lRkNH7xgNm/fRyi2h0lgcqWHNopNXxHUEDWtydqv2VSQRq+kqm4hhNA0r7jMt6HcxRazIMcg78XrTO7PkItr30UUUxTyxiPqDgYjUMtqlsfcRXCcU0bHoTn9JuHCMzEQURS+ViNhT7BeeEuW0URe7/xknEXFqK6IopilUHJoQ4STIAGfmIoqBeULe6IdbcTTmfYrzOQ7FOL6tJxFhnW2YLhWfOLEUwb6Km/Hk/OX85XbMmlWmL4MZFdX5l2CiOacSEsORQUxQ028CiUYXV3FupwJeK/ZOlbCOZcNMxSXWgurp/kc00H71bCUCHNt35U8Bx9bCSsUL9PPd0GMwJ65f8kKPoQZ1hqAIdHAYdSmoQ0ETPeTtBjrmoSB/YR8LR5+AR13ZqEASC7AbPAOPejRZ+NrAL1+gD0P8B5NkqQX8MGxgIC8DmCd4gHn+En8a4GiZRITAsCDs4mn4aXD3JDgDIkFiY+sk/LQ3g30yYLWgukD4cRarN+ClUVYx0EENplpgcFP/HTAwDNLW2+CPDqh+DMSE8VV0wnvz3MwIrBjxVbTDm0ecFwZMUvFVAB4zt4FylkMFEH9wU0othwpgMLb1VTSaw+vu5LIk/CFdiywqdpxu9Iz/0zPi/HogFkhTU7HVsw2wyOAtPNCeUleG1FvDOZnthx26VztjLRrhCGSUu4kAYR/EIr+ITTgWMLJyYgJMUekLjWjmYRWm+0lxCNvvD+I19RUoFjTyBmMCuKWT3G0MAxgqGpXbZSDWoP6wAHZC9IcFYvkabrJGAjklkKzy7lCQYrc3veM+/wCI0O9QUEWMevjRQ0QQOyFZqEHlOepLHlSFscx8xCcEVj9hsqUXD6yiuM8ZdKlpQiLS1AUfDFjUcyP9KoDUSP9VdMB6vXtpN+0VfBUpz8PQDEAR1dwNLQM+s5v/bO5+xqgIZdMArP4siifhWRYWoWxr4iKEfXL8DNCjUflpBIiDTLr9iTiimO+oegh4il2FHrK5EXPoQtaCYkTIJnho7LRmkbuxe+gwIpaiZmCDOgUuavRz5/FFI1nuUJxoZsSJEM20ITP2A9EqA2SzaIdo4IFsPu4Qjca5g+yiJj9Q4vEJ0SoooIBcXwR2NPEd0V1t7kYBURHcWfxfIUJ0dgqf0fh1IkQXO07EIndzv2dCiRA1lTkRolEsJ0I0n+BEiGZ23DohWuTBhR2iRgEXAIpWPhH3xhSyvhN10W6qe/hYqHv7VOueKKNgkLu1e6B8J9F0olJn7ugSjcQ5V3yRu7X7YO5jFw1iwUt7togGsVzcIRrEcqud7MYjs1CkvhsbhpljRdOJSqVGbJ/qFncQfoeuCMLcl+1OaKH1GtnZibmOU3axY9ZsURdzDb7cqeYTFWo/XriqFK+gE7Vs1uCTrGwEyPQn5ap3fH4SNZ7W4JGsbBzLBIGqfscafKlYVo9maeToJvlUwQ4jFVyJh6iKswM+yqingtunEFXRsPrUU1IVXPWWqAqq3lpWBVfSqKrC/gtDCVQk+iKMsYo0H+cxVtFZ/gYVXM21qgquXEVUReJo1khFjg4VX0Wqb1aZqgBu0P4BKsy/b5hERawPXOdVkWOeja4ifVBuoQL5JIy+ivSphYWKxA6OkQquDl5URZ41L7YK9N4nbRV5Vu7YKrIEtNFVJLfTtsjeSeE4juM4juM4juM4juM4juM4juM4juOI8Ae/UVTPRIJl+wAAAABJRU5ErkJggg==", 
+"http://media.istockphoto.com/photos/number-2-picture-id537511944?k=6&m=537511944&s=170667a&w=0&h=py_X9J4M8Kg1LnwsZG0tjuNlp39N436ijdXiVbr-EMg="
+             ];
+
+// Amount of images
+var amt = document.getElementsByTagName("IMG").length;
+if(i == 0){
+  // No images?
+  alert("There are no images on this page");
+}else{
+  for (var i = 0; i < amt; i++){
+    // Get a random number and an image and use an image from imgsrc
+    var cIMG = document.getElementsByTagName("IMG")[i];
+    var rand = random(imgsrc.length - 1);
+    cIMG.src = imgsrc[rand];
+  }
+}
